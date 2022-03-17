@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Style -->
+        <style>
+            body{
+                background-color: #191622;
+                margin: auto;
+                font-family: 'JetBrains Mono', monospace;
+                color: #E1E1E6;
+            }
+            
+            .black_text{
+                color: #44475a;
+            }
+            
+            .black_hover:hover{
+                transition: 1s;
+                text-shadow: #44475a;
+            }
+            
+            .background_text{
+                color: #191622;
+            }
+            
+            .background_hover:hover{
+                transition: 1s;
+                text-shadow: #191622 0 0 10px;
+            }
+            
+            .red_text{
+                color: #E96379;
+            }
+            
+            .red_hover:hover{
+                transition: 1s;
+                text-shadow: #E96379 0 0 10px;
+            }
+            
+            
+            .purple_text{
+                color: #988BC7;
+            }
+            
+            .purple_hover:hover{
+                transition: 1s;
+                text-shadow: #988BC7 0 0 10px;
+            }
+            
+            .cyan_text{
+                color: #78D1E1;
+            }
+            
+            .cyan_hover:hover{
+                transition: 1s;
+                text-shadow: #78D1E1 0 0 10px;
+            }
+            
+            .pink_text{
+                color: #FF79C6;
+            }
+            
+            .pink_hover:hover{
+                transition: 1s;
+                text-shadow: #FF79C6 0 0 10px;
+            }
+            
+            .green_text{
+                color: #67E480;
+            }
+            
+            .green_hover:hover{
+                transition: 1s;
+                text-shadow: #67E480 0 0 10px;
+            }
+            
+            .orange_text{
+                color: #E89E64;
+            }
+            
+            .orange_hover:hover{
+                transition: 1s;
+                text-shadow: #E89E64 0 0 10px;
+            }
+            
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                list-style: none;
+            }
+            
+            a{
+                text-decoration: none;
+                color: #E1E1E6;
+            }
+            
+            #google_search{
+                width: 100%;
+                height: 100%;
+                background-color: #191622;
+                border-radius: 10px;
+                padding: 10px;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            input{
+                border: none;
+                border-radius: 10px;
+                background-color: #191622;
+                color: #E1E1E6;
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            button{
+                border: none;
+                border-radius: 10px;
+                background-color: #191622;
+                color: #E1E1E6;
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            main{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 15vh;
+            }
+            
+            section{
+                text-align: center;
+                margin: auto;
+                background-color: #44475a;
+                padding: 15px;
+                border-radius: 10px;
+            }
+            
+            .icons{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+            
+            i{
+                color: #E1E1E6;
+                width: none;
+                height: none;
+                padding: 0;
+                margin: 5px;
+                transition: 1s;
+            }
+            
+            .invible_icon{
+                visibility: hidden;
+            }
+            
+            h1{
+                color: #988BC7;
+            }
+            
+            /* 
+            Color Palette:
+            
+            Background	    #191622
+            Current Line    #44475a
+            Cyan	        #78D1E1
+            Pink	        #FF79C6
+            Purple	        #988BC7
+            Green	        #67E480
+            Orange	        #E89E64
+            Red	            #E96379
+            
+            */
+        </style>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+        <title>Start Page</title>
+    </head>
+    <body>
+<!--         <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="far fa-circle"></i>
+                <i class="fas fa-circle"></i>
+            </nav>
+        </header> -->
+
+        <div id="google_search">
+            <form action="https://www.google.com/search" method="get">
+                <input type="text" name="q" placeholder="Search Google">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <main>
+            <section>
+                <h1>Social</h1>
+                <div class="icons">
+                    <a href="https://youtube.com"><i class="fab fa-youtube fa-3x red_hover"></i></a>
+                    <a href="https://web.whatsapp.com"><i class="fab fa-whatsapp fa-3x green_hover"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram fa-3x orange_hover"></i></a>
+                </div>
+            </section>
+
+            <section>
+                <h1>Social</h1>
+                <div class="icons">
+                    <a href="https://discord.com/app"><i class="fab fa-youtube fa-3x red_hover"></i></a>
+                    <a href="https://reddit.com/r/unixporn/"><i class="fab fa-whatsapp fa-3x green_hover"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram fa-3x orange_hover"></i></a>
+                </div>
+            </section>
+<!-- 
+            <section>
+                <h1>Design</h1>
+                <div class="icons">
+                </div>
+            </section> 
+-->
+            <section>
+                <h1>Dev</h1>
+                <div class="icons">
+                    <a href="https://github.com/AlexandreSantAnaLangunno"><i class="fab fa-github fa-3x background_hover"></i></a>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+        <script>
+            console.log(`Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+`)
+
+        </script>
+    </body>
+</html>
